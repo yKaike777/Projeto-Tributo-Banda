@@ -50,3 +50,13 @@
 .menu-list li {
     position: relative; /* Necessário para o submenu */
 }
+
+#inicio{
+    text-align: center;
+    padding: 25px;
+    color: #e8982e;
+}
+
+.lista{
+    list-style: circle;
+}
