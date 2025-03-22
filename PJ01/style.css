@@ -5,6 +5,19 @@
     font-family: Arial, sans-serif;
 }
 
+body{
+    background-color: #ddb890;
+}
+
+
+    /* Foto da logo do kanye west */
+#kanyelogo{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+    /* Menu que aparece quando passa o mouse por cima das palavras do cabeçalho */
 .submenu {
     display: none;
     position: absolute;
@@ -14,21 +27,33 @@
     background-color: #411218;
     width: 150px;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px;
 }
 
+    /* Texto do submenu */
 .subtext{
     padding: 10px;
 }
 
+    /* Menu que aparece quando passa o mouse em cima */
 .submenu li a{
     text-decoration: none; /* Tira o sublinhado das âncoras */ 
     color: #e8982e; 
 }
 
-.menu-list li:hover .submenu{ /* Faz o submenu aparecer quando passar o mouse por cima */
+    /* Faz o submenu aparecer quando passar o mouse por cima */
+.menu-list li:hover .submenu{ 
     display: block;
 }
 
+    /* Pra deixar o cabeçalho em cima sempre*/
+header{ 
+    position: fixed;
+    width: 100%;
+    box-shadow: 5px 5px 75px;
+}
+
+    /* Itens do cabeçalho (Início, Biografia, Álbuns e Músicas */
 .menu{
     text-decoration: none; /* Tira o sublinhado das âncoras */ 
     color: 	#e8982e;
@@ -45,18 +70,59 @@
     height: 50px;
     padding: 10px;
     background-color: 	#411218;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .menu-list li {
     position: relative; /* Necessário para o submenu */
 }
 
-#inicio{
-    text-align: center;
-    padding: 25px;
-    color: #e8982e;
+footer{
+    background-color: #411218;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.lista{
-    list-style: circle;
+.maincontent{
+    background-color: #411218;
+    color: #e8982e;
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin: 130px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #000000;
+}
+
+.biografia_texto{
+    display: flex;
+}
+
+#kanye{
+    width: 150px;
+    height: 150px; 
+    align-self: center; 
+    border: 3px solid #e8982e;
+    box-shadow: 5px 5px 10px #411218;
+}
+
+
+
+.img_biografia{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 30px;
+}
+
+p{
+  padding: 10px;  
+}
+h1, h2{
+    padding: 5px;
 }
