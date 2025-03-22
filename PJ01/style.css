@@ -5,8 +5,9 @@
     font-family: Arial, sans-serif;
 }
 
-body{
-    background-color: #ddb890;
+body {
+    background-color: #121212;
+    color: #e0e0e0; 
 }
 
 
@@ -15,6 +16,7 @@ body{
     display: flex;
     justify-content: center;
     padding: 10px;
+    background-color: #1A1A1A;
 }
 
     /* Menu que aparece quando passa o mouse por cima das palavras do cabeçalho */
@@ -24,10 +26,10 @@ body{
     top: 100%; /* Faz o submenu aparecer abaixo do menu */
     left: 0; 
     list-style: none;
-    background-color: #411218;
-    width: 150px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px;
+    background-color: #333; 
+    width: 160px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
     /* Texto do submenu */
@@ -36,9 +38,11 @@ body{
 }
 
     /* Menu que aparece quando passa o mouse em cima */
-.submenu li a{
-    text-decoration: none; /* Tira o sublinhado das âncoras */ 
-    color: #e8982e; 
+.submenu li a {
+    text-decoration: none;
+    color: #FFD700;
+    padding: 10px;
+    display: block;
 }
 
     /* Faz o submenu aparecer quando passar o mouse por cima */
@@ -50,53 +54,57 @@ body{
 header{ 
     position: fixed;
     width: 100%;
-    box-shadow: 5px 5px 75px;
+    background-color: #222; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
     /* Itens do cabeçalho (Início, Biografia, Álbuns e Músicas */
-.menu{
-    text-decoration: none; /* Tira o sublinhado das âncoras */ 
-    color: 	#e8982e;
+.menu {
+    text-decoration: none;
+    color: #FFD700; 
     font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu:hover {
+    color: #E63946; 
 }
 
 .menu-list {
     display: flex; /* Faz os itens ficarem lado a lado */
-    gap: 20px; /* Espaçamento entre os menus */
+    gap: 25px; /* Espaçamento entre os menus */
     list-style: none; /* Remove os marcadores de lista */
     padding: 0;
     justify-content: center;
     align-items: center;
     height: 50px;
     padding: 10px;
-    background-color: 	#411218;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
 .menu-list li {
-    position: relative; /* Necessário para o submenu */
+    position: relative;
 }
 
 footer{
-    background-color: #411218;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
 }
 
 .maincontent{
-    background-color: #411218;
-    color: #e8982e;
+    background-color: #1A1A1A; 
+    color: #e0e0e0;
     width: 1050px;
     display: flex;
     flex-direction: column;
     justify-self: center;
     margin: 130px;
     padding: 30px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px #000000;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 .biografia_texto{
@@ -111,7 +119,15 @@ footer{
     box-shadow: 5px 5px 10px #411218;
 }
 
+footer i {
+    font-size: 25px;
+    color: #FFD700;
+    transition: color 0.3s ease-in-out;
+}
 
+footer i:hover {
+    color: #E63946;
+}
 
 .img_biografia{
     display: flex;
@@ -120,9 +136,25 @@ footer{
     gap: 30px;
 }
 
-p{
-  padding: 10px;  
+.img_biografia img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #FFD700;
+    box-shadow: 5px 5px 15px rgba(255, 215, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
 }
+
+.img_biografia img:hover {
+    transform: scale(1.1);
+}
+
+p {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
 h1, h2{
     padding: 5px;
+    color: #FFD700;
 }
